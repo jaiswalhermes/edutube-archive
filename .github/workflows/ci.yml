@@ -1,0 +1,101 @@
+name: ci
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+  workflow_dispatch:
+
+concurrency:
+  group: ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  verify:
+    name: e2e + dogfood (local)
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      - run: npm ci
+      - run: npx playwright install --with-deps chromium
+
+      # the site is static: serve the deployed folder exactly as Vercel will
+      - name: serve site
+        run: |
+          python3 -m http.server 8799 --directory site >/tmp/serve.log 2>&1 &
+          for i in $(seq 1 30); do curl -sf -o /dev/null http://127.0.0.1:8799/ && break; sleep 0.5; done
+          curl -sf -o /dev/null -w 'serving %{http_code}\n' http://127.0.0.1:8799/
+
+      - name: e2e (assertions + 12-width overflow matrix)
+        run: BASE=http://127.0.0.1:8799 node tools/e2e.js
+
+      - name: dogfood the public export
+        run: python3 tools/dogfood.py http://127.0.0.1:8799
+
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: e2e-report
+          path: |
+            data/e2e.json
+            data/dogfood/
+          retention-days: 14
+
+  deploy:
+    name: deploy (vercel production)
+    needs: verify
+    if: github.ref == 'refs/heads/main' && github.event_name == 'push' || github.event_name == 'workflow_dispatch'
+    runs-on: ubuntu-latest
+    environment:
+      name: production
+      url: https://edutube-archive.vercel.app
+    env:
+      VERCEL_ORG_ID: ${{ secrets.VERCEL_ORG_ID }}
+      VERCEL_PROJECT_ID: ${{ secrets.VERCEL_PROJECT_ID }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+
+      # CI stays green until the token is configured; the deploy step is the only gate
+      - id: token
+        run: echo "present=${{ secrets.VERCEL_TOKEN != '' }}" >> "$GITHUB_OUTPUT"
+
+      - if: steps.token.outputs.present == 'true'
+        run: npm i -g vercel@54
+
+      - if: steps.token.outputs.present == 'true'
+        name: pull + build + deploy
+        run: |
+          vercel pull --yes --environment=production --token="$VERCEL_TOKEN"
+          vercel build --prod --token="$VERCEL_TOKEN"
+          url=$(vercel deploy --prebuilt --prod --token="$VERCEL_TOKEN")
+          echo "deployed $url"
+          echo "DEPLOY_URL=$url" >> "$GITHUB_ENV"
+        env:
+          VERCEL_TOKEN: ${{ secrets.VERCEL_TOKEN }}
+
+      - if: steps.token.outputs.present == 'true'
+        name: e2e against production
+        run: |
+          npx playwright install --with-deps chromium
+          for i in $(seq 1 24); do
+            code=$(curl -s -o /dev/null -w '%{http_code}' https://edutube-archive.vercel.app/)
+            [ "$code" = "200" ] && break
+            echo "alias not ready ($code), retrying"; sleep 5
+          done
+          BASE=https://edutube-archive.vercel.app node tools/e2e.js
+
+      - if: steps.token.outputs.present != 'true'
+        run: echo "::notice::VERCEL_TOKEN not set - build and tests passed, deploy skipped."
+
+  # nothing below this line: one workflow, two jobs, no separate release pipeline

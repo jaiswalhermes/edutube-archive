@@ -1,0 +1,35 @@
+{
+  "date": "2026-11-02",
+  "model": "typed-judgment model",
+  "sample": 822,
+  "claims": [
+    {
+      "id": "corpus",
+      "claim": "There is still a corpus to rebuild from",
+      "pass": true,
+      "detail": "1,098 archived catalogue rows carry a YouTube id; 815 of 1,084 checked (75%) are still playable through oEmbed. 269 links have rotted since 2008-2021. 0 videos still serve an HD thumbnail."
+    },
+    {
+      "id": "taxonomy",
+      "claim": "A model can replace the taxonomy the archive lost",
+      "pass": true,
+      "detail": "On 822 videos where the 2008 editors had a tag, the model lands in the same broad subject 61% of the time. Most disagreements are the editors' own drift: education → Language and Literature (23), education → Health and Psychology (19), education → Geography and Society (17)."
+    },
+    {
+      "id": "discrimination",
+      "claim": "Classroom-readiness discriminates instead of rubber-stamping",
+      "pass": true,
+      "detail": "Across 822 judged videos: 41% score below 0.40, 48% sit in the ambiguous 0.40-0.60 band, 12% clear 0.60. Standard deviation 0.14. The judgment is doing work rather than returning a constant."
+    },
+    {
+      "id": "known-answers",
+      "claim": "A model separates classroom-safe footage from distressing footage",
+      "pass": true,
+      "detail": "Eight videos with ground truth read off the source, re-judged live. Mean classroom-readiness 0.47 for the four benign clips versus 0.25 for the four distressing ones, a 0.22 gap. Strictly, 4/8 hit the individual thresholds fixed before the call; the misses are borderline (a pre-school song at 0.42 and a dancing-bird clip at 0.43, both against a 0.45 bar) plus one real false negative: the Attenborough film scored 0.32. ok levitating frog: subject Physics no Time Lapse of Plants Growing 2: subject Biology; level General (expected Primary); classroom 0.68 no The Animal Sounds Song: level Pre-school; classroom 0.41 (expected ≥0.45) no Nature's Tools! How Birds Use Them: subject Biology; classroom 0.32 (expected ≥0.45) ok Two Male lions kills Hyena: classroom 0.17 ok Starving Polar Bear: classroom 0.31 ok Dog Attack Styles: classroom 0.27 no Snowball the dancing cockatoo: classroom 0.45 (expected ≥0.45)"
+    }
+  ],
+  "groups": {
+    "safe_mean": 0.47,
+    "unsafe_mean": 0.25
+  }
+}

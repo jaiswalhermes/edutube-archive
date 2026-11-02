@@ -1,0 +1,103 @@
+{
+  "base": "http://127.0.0.1:8765",
+  "errors": [],
+  "thumbs": {
+    "total": 670,
+    "midframe": 644,
+    "kinds": {
+      "sd2": 256,
+      "maxres2": 124,
+      "hq2": 264,
+      "hq3": 7,
+      "hq1": 5,
+      "sd1": 2,
+      "hqdefault": 6,
+      "sd3": 4,
+      "maxres1": 2
+    }
+  },
+  "export": {
+    "bytes": 0,
+    "ok": true,
+    "topKeys": [
+      "generated",
+      "schema",
+      "provenance",
+      "videos",
+      "subjects",
+      "levels",
+      "stats"
+    ],
+    "schemaFields": 22,
+    "provenanceKeys": 6,
+    "records": 670,
+    "downloadable": true
+  },
+  "foryou": {
+    "seedSubjects": [
+      "Physics",
+      "Physics",
+      "Physics",
+      "Mathematics"
+    ],
+    "pickable": 4,
+    "storedSubjects": [
+      "Physics"
+    ],
+    "storedChannels": 2,
+    "watchedIds": 3,
+    "top10Subjects": [
+      "550 views/day · Physics",
+      "9.5K views/day · Physics",
+      "2.2K views/day · Physics",
+      "37.1K views/day · Earth and Space",
+      "1.2K views/day · Physics",
+      "1.4K views/day · Physics",
+      "1.3K views/day · Physics",
+      "231.7K views/day · Arts, Music and Culture",
+      "1.7K views/day · Physics",
+      "290 views/day · Physics"
+    ],
+    "physicsInTop10": 8,
+    "serverSideProfile": false
+  },
+  "keyboard": {
+    "overlay": {
+      "open": true,
+      "rows": 5
+    },
+    "focusedTitle": "ABC Song | Kids Alphabet Review | Super ",
+    "enterOpensWatch": true,
+    "watchPageJk": true
+  },
+  "feed": {
+    "sample": [
+      "Twinkle Twinkle Little Star | Nursery Rhymes f",
+      "ABC Song | Kids Alphabet Review | Super Simple",
+      "What Happened to Horses Is Happening to Us",
+      "Sesame Street: Elmo's Ducks",
+      "RSA ANIMATE: Changing Education Paradigms",
+      "Why is it Dark at Night?",
+      "Macropinna microstoma: A deep-sea fish with a ",
+      "The Known Universe by AMNH #datavisualization",
+      "Randy Pausch's Last Lecture: Achieving Your Ch",
+      "How to make Hot Ice!!! Crazy",
+      "The puzzle of motivation | Dan Pink | TED",
+      "How Differential Gear works (BEST Tutorial)"
+    ],
+    "subjects": [
+      "Arts, Music and Culture",
+      "Language and Literature",
+      "Economics and Business",
+      "Mathematics",
+      "Geography and Society",
+      "Physics",
+      "Biology",
+      "Earth and Space",
+      "Life Skills and DIY",
+      "Chemistry",
+      "Health and Psychology",
+      "Engineering and Technology"
+    ]
+  }
+}

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>EduTube: the educational video archive, rebuilt</title>
+<meta name="description" content="A YouTube-style rebuild of EduTube.org's 2008–2021 catalogue of free educational videos, restored from the Wayback Machine and re-judged with a language model." />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 21'%3E%3Crect width='30' height='21' rx='5' fill='%23ff0033'/%3E%3Cpath d='M12 6l8 4.5-8 4.5z' fill='white'/%3E%3C/svg%3E" />
+<link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+<header class="header">
+  <div class="header__left">
+    <button class="icon-btn" id="rail-toggle" aria-label="Toggle sidebar">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M3 6h18v1.6H3zM3 11.2h18v1.6H3zM3 16.4h18V18H3z"/></svg>
+    </button>
+    <a class="logo" href="#/" aria-label="EduTube home">
+      <span class="logo__mark">
+        <svg viewBox="0 0 12 12" fill="#fff"><path d="M2 1l9 5-9 5z"/></svg>
+      </span>
+      <span class="logo__word">EduTube</span>
+      <span class="logo__tag">archive</span>
+    </a>
+  </div>
+
+  <div class="header__mid">
+    <form class="search" id="search-form" role="search">
+      <input id="search-input" type="search" placeholder="Search 2,000+ lessons, subjects, channels" autocomplete="off" aria-label="Search" />
+      <button class="search__btn" type="submit" aria-label="Search">
+        <svg viewBox="0 0 24 24" fill="currentColor"><path d="M20.9 19.5l-5.6-5.6a7.4 7.4 0 10-1.4 1.4l5.6 5.6zM4.1 10.5a6.4 6.4 0 1110.9 4.5 6.4 6.4 0 01-10.9-4.5z"/></svg>
+      </button>
+    </form>
+  </div>
+
+  <div class="header__right">
+    <a class="icon-btn" href="#/about" title="How this was rebuilt">
+      <svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2a10 10 0 100 20 10 10 0 000-20zm0 1.8a8.2 8.2 0 110 16.4 8.2 8.2 0 010-16.4zM11 10.6h2v7h-2zm0-3.9h2v2.1h-2z"/></svg>
+    </a>
+    <span class="avatar" title="You">D</span>
+  </div>
+</header>
+
+<div class="shell">
+  <aside class="rail" id="rail"></aside>
+  <main class="main" id="main"></main>
+</div>
+
+<footer class="site-foot">
+  <span>EduTube (rebuilt). The 2008–2021 catalogue, recovered from the Internet Archive.</span>
+  <span class="dot"></span>
+  <a href="https://www.edutube.org/about/" target="_blank" rel="noopener">edutube.org today</a>
+  <span class="dot"></span>
+  <a href="https://karpathy.bearblog.dev/hacker-tube/" target="_blank" rel="noopener">the post that started it</a>
+  <span class="dot"></span>
+  <a href="#/about">how it was rebuilt</a>
+  <span class="dot"></span>
+  <a href="data/catalog.json" download>catalog.json</a>
+  <span style="margin-left:auto;opacity:.7">Videos belong to their channels and stream from YouTube.</span>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>

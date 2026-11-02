@@ -1,0 +1,576 @@
+{
+  "base": "https://www.edutube.org",
+  "sections": [
+    {
+      "id": "home",
+      "path": "/",
+      "status": 200,
+      "title": "EduTube &#8211; Reviews of Free Education Games",
+      "h1": [],
+      "headings": [],
+      "categories": [
+        "computer-science",
+        "geography",
+        "history",
+        "math",
+        "physics",
+        "science",
+        "space"
+      ],
+      "genres": [
+        "adventure",
+        "coding",
+        "creative",
+        "mapping",
+        "puzzle",
+        "rpg",
+        "sandbox",
+        "simulation",
+        "strategy",
+        "turn-based-strategy-tbs"
+      ],
+      "platforms": [
+        "doxbox",
+        "offline-version",
+        "online-browser"
+      ],
+      "ages": [],
+      "games": [
+        "civilization",
+        "code-org",
+        "image",
+        "kings-quest-iv-the-perils-of-rosella",
+        "master-of-orion-2",
+        "minecraft-education",
+        "prodigy-math-game",
+        "sim-city-2000",
+        "the-incredible-machine-2",
+        "warlords-ii"
+      ],
+      "posts": [
+        "2018/01/02/about-space-and-world",
+        "2018/01/02/soundtrack-for-the-game-is-released",
+        "2021/02/28/welcome-new-edutube"
+      ],
+      "excerpt": "EduTube - Reviews of Free Education Games EduTube EduTube Home About Blog Games Search Login Sign Up EduTube Login Sign Up Home About Blog Games Search Online (browser) Adventure RPG Prodigy Math Game Prodigy is a free math game set in a fantasy world, used by over 50 million students worldwide. It has a built-in mathematics curriculum that is geared toward elementary and middle school students. Game Details DOSBox Offline Creative Puzzle Sandbox The Incredible Machine The Incredible Machine is a very popular puzzle game from the 1990s that tests your engineering skills and ingenuity. Solve \"machine puzzles\" through inventive use of different objects to achieve a simple task. Game Details Online (browser) Adventure Coding Puzzle Code.org Code.org provides free computer science activities and lessons, in particular interactive puzzles and games. It is used by millions of students globally",
+      "word_count": 1283
+    },
+    {
+      "id": "about",
+      "path": "/about/",
+      "status": 200,
+      "title": "About &#8211; EduTube",
+      "h1": [
+        "About"
+      ],
+      "headings": [
+        {
+          "level": 1,
+          "text": "About"
+        }
+      ],
+      "categories": [],
+      "genres": [],
+      "platforms": [],
+      "ages": [],
+      "games": [
+        "prodigy-math-game"
+      ],
+      "posts": [
+        "2018/01/02/about-space-and-world",
+        "2018/01/02/soundtrack-for-the-game-is-released",
+        "2021/02/28/welcome-new-edutube"
+      ],
+      "excerpt": "About - EduTube EduTube EduTube Home About Blog Games Search Login Sign Up EduTube Login Sign Up Home About Blog Games Search About EduTube About We are a bunch of fans of old and new educational games, ranging in age from 4 to 40. Educated from pre-school to PhD in education, we try to give a fair view of the different games from our different perspectives. In our carefully curated collection, we feature only the best. And we have quite a different take on what is educational. A lot of games classified as &#8216;educational' are not very stimulating. A lot of very stimulating games, requiring 21st century skills and thinking, are not typically classified as &#8216;educational'. On this website, we feature only games we think are truly educational, regardless of what category or genre they are typically placed in. We also flag games with female heroes (protagonists), of which there are t",
+      "word_count": 545
+    },
+    {
+      "id": "blog",
+      "path": "/blog/",
+      "status": 200,
+      "title": "Blog &#8211; EduTube",
+      "h1": [
+        "Home"
+      ],
+      "headings": [
+        {
+          "level": 1,
+          "text": "Home"
+        }
+      ],
+      "categories": [],
+      "genres": [],
+      "platforms": [],
+      "ages": [],
+      "games": [
+        "prodigy-math-game"
+      ],
+      "posts": [
+        "2018/01/02/about-space-and-world",
+        "2018/01/02/soundtrack-for-the-game-is-released",
+        "2021/02/28/welcome-new-edutube"
+      ],
+      "excerpt": "Blog - EduTube EduTube EduTube Home About Blog Games Search Login Sign Up EduTube Login Sign Up Home About Blog Games Search Home EduTube Blog Welcome to the new EduTube! The original focus of EduTube (2008-2021) was to categorize and embed free educational videos. As of 2021 we shifted the focus towards free educational games. This is first of all, because the number of educational videos has grown exponentially, and it is too large a task to even begin to organise and classify them. Back... admin 1 Comment News February 28, 2021 Read More About Space and World Habitasse platea dictumst vestibulum rhoncus est pellentesque elit ullamcorper massa sapien faucibus et molestie ac feugiat sed. Elementum nibh tellus molestie nunc non blandit massa enim nec. Eget gravida cum sociis natoque penatibus magnis. At quis risus vulputate viverra maecenas. umut 0 Comment News January 2, 2018 Read More ",
+      "word_count": 354
+    },
+    {
+      "id": "games_index",
+      "path": "/free-educational-games/games-by-categories",
+      "status": 200,
+      "title": "Games by Categories &#8211; EduTube",
+      "h1": [
+        "Games by Categories"
+      ],
+      "headings": [
+        {
+          "level": 1,
+          "text": "Games by Categories"
+        }
+      ],
+      "categories": [
+        "computer-science",
+        "geography",
+        "history",
+        "math",
+        "physics",
+        "science",
+        "space"
+      ],
+      "genres": [
+        "adventure",
+        "coding",
+        "creative",
+        "mapping",
+        "puzzle",
+        "rpg",
+        "sandbox",
+        "simulation",
+        "strategy",
+        "turn-based-strategy-tbs"
+      ],
+      "platforms": [
+        "doxbox",
+        "offline-version",
+        "online-browser"
+      ],
+      "ages": [],
+      "games": [
+        "civilization",
+        "code-org",
+        "image",
+        "kings-quest-iv-the-perils-of-rosella",
+        "master-of-orion-2",
+        "minecraft-education",
+        "prodigy-math-game",
+        "sim-city-2000",
+        "the-incredible-machine-2",
+        "warlords-ii"
+      ],
+      "posts": [
+        "2018/01/02/about-space-and-world",
+        "2018/01/02/soundtrack-for-the-game-is-released",
+        "2021/02/28/welcome-new-edutube"
+      ],
+      "excerpt": "Games by Categories - EduTube EduTube EduTube Home About Blog Games Search Login Sign Up EduTube Login Sign Up Home About Blog Games Search Games by Categories EduTube Free Educational Games Games by Categories All Geography History ICT/Computer Science Math Physics Science Space image Coding Creative Sandbox Minecraft Education Minecraft Education Edition Adventure Coding Puzzle Code.org Online (browser) Code.org provides free computer science activities and lessons, in particular interactive puzzles and games. It is used by millions of students globally from young to old, and some of the activities are translated in over 45 languages. Strategy Turn based strategy (TBS) Civilization DOSBox Civilization is perhaps the most well-known example of a fun game used widely for educational purposes (rather than the other way around, an educational game with fun elements). Civilization II downlo",
+      "word_count": 881
+    },
+    {
+      "id": "category_math",
+      "path": "/game-category/math/",
+      "status": 200,
+      "title": "Math &#8211; EduTube",
+      "h1": [
+        "Math"
+      ],
+      "headings": [
+        {
+          "level": 1,
+          "text": "Math"
+        }
+      ],
+      "categories": [
+        "math"
+      ],
+      "genres": [
+        "adventure",
+        "rpg"
+      ],
+      "platforms": [
+        "online-browser"
+      ],
+      "ages": [],
+      "games": [
+        "prodigy-math-game"
+      ],
+      "posts": [
+        "2018/01/02/about-space-and-world",
+        "2018/01/02/soundtrack-for-the-game-is-released",
+        "2021/02/28/welcome-new-edutube"
+      ],
+      "excerpt": "Math - EduTube EduTube EduTube Home About Blog Games Search Login Sign Up EduTube Login Sign Up Home About Blog Games Search Math EduTube Games Math Adventure RPG Prodigy Math Game Online (browser) 56$ Prodigy is a free math game set in a fantasy world, used by over 50 million students worldwide. It has a built-in mathematics curriculum that is geared toward elementary and middle school students. Archives February 2021 January 2018 Welcome to the new EduTube! February 28, 2021 About Space and World January 2, 2018 Soundtrack for The Game is Released! January 2, 2018 Search Search Categories News Tags Egypt Fantastic Movie Review Soundtrack Video War Latest Posts Welcome to the new EduTube! February 28, 2021 About Space and World January 2, 2018 Soundtrack for The Game is Released! January 2, 2018 Categories News (3) Search Recent Posts Welcome to the new EduTube! About Space and World So",
+      "word_count": 219
+    },
+    {
+      "id": "genre_strategy",
+      "path": "/genre/strategy/",
+      "status": 200,
+      "title": "Strategy &#8211; EduTube",
+      "h1": [
+        "Strategy"
+      ],
+      "headings": [
+        {
+          "level": 1,
+          "text": "Strategy"
+        }
+      ],
+      "categories": [],
+      "genres": [
+        "mapping",
+        "strategy",
+        "turn-based-strategy-tbs"
+      ],
+      "platforms": [
+        "doxbox",
+        "offline-version"
+      ],
+      "ages": [],
+      "games": [
+        "civilization",
+        "master-of-orion-2",
+        "prodigy-math-game",
+        "warlords-ii"
+      ],
+      "posts": [
+        "2018/01/02/about-space-and-world",
+        "2018/01/02/soundtrack-for-the-game-is-released",
+        "2021/02/28/welcome-new-edutube"
+      ],
+      "excerpt": "Strategy - EduTube EduTube EduTube Home About Blog Games Search Login Sign Up EduTube Login Sign Up Home About Blog Games Search Strategy EduTube Games Strategy Strategy Turn based strategy (TBS) Civilization DOSBox Civilization is perhaps the most well-known example of a fun game used widely for educational purposes (rather than the other way around, an educational game with fun elements). Civilization II download option 1 Civilization II download option 2 Wikipedia Mapping Strategy Turn based strategy (TBS) Warlords II Deluxe DOSBox Offline Warlords II is a turn-based fantasy / strategy game. Use magic, armies, quests, diplomacy and increasingly powerful heroes to defeat the other players. The Deluxe version has the quite unique feature of allowing you to design your own maps. Even character and castle designs can be edited should you wish. Download option 1 | Download... Strategy Mast",
+      "word_count": 310
+    },
+    {
+      "id": "platform_online",
+      "path": "/platform/online-browser/",
+      "status": 200,
+      "title": "Online (browser) &#8211; EduTube",
+      "h1": [
+        "Online (browser)"
+      ],
+      "headings": [
+        {
+          "level": 1,
+          "text": "Online (browser)"
+        }
+      ],
+      "categories": [],
+      "genres": [
+        "adventure",
+        "coding",
+        "puzzle",
+        "rpg"
+      ],
+      "platforms": [
+        "doxbox",
+        "offline-version",
+        "online-browser"
+      ],
+      "ages": [],
+      "games": [
+        "code-org",
+        "kings-quest-iv-the-perils-of-rosella",
+        "prodigy-math-game"
+      ],
+      "posts": [
+        "2018/01/02/about-space-and-world",
+        "2018/01/02/soundtrack-for-the-game-is-released",
+        "2021/02/28/welcome-new-edutube"
+      ],
+      "excerpt": "Online (browser) - EduTube EduTube EduTube Home About Blog Games Search Login Sign Up EduTube Login Sign Up Home About Blog Games Search Online (browser) EduTube Games Online (browser) Adventure Coding Puzzle Code.org Online (browser) Code.org provides free computer science activities and lessons, in particular interactive puzzles and games. It is used by millions of students globally from young to old, and some of the activities are translated in over 45 languages. Adventure King's Quest IV: The Perils of Rosella DOSBox Offline Online (browser) The fourth game in Sierra's famous King's Quest series, released in 1988, is the very first adventure game with a female protagonist (hero). It is also one of the first games with a female hero across any game genre. The role taken on by the player is that of Princess Rosella, daughter of King Graham... Adventure RPG Prodigy Math Game Online (bro",
+      "word_count": 332
+    },
+    {
+      "id": "platform_offline",
+      "path": "/platform/offline-version/",
+      "status": 200,
+      "title": "Offline &#8211; EduTube",
+      "h1": [
+        "Offline"
+      ],
+      "headings": [
+        {
+          "level": 1,
+          "text": "Offline"
+        }
+      ],
+      "categories": [],
+      "genres": [
+        "adventure",
+        "creative",
+        "mapping",
+        "puzzle",
+        "sandbox",
+        "simulation",
+        "strategy",
+        "turn-based-strategy-tbs"
+      ],
+      "platforms": [
+        "doxbox",
+        "offline-version",
+        "online-browser"
+      ],
+      "ages": [],
+      "games": [
+        "kings-quest-iv-the-perils-of-rosella",
+        "prodigy-math-game",
+        "sim-city-2000",
+        "the-incredible-machine-2",
+        "warlords-ii"
+      ],
+      "posts": [
+        "2018/01/02/about-space-and-world",
+        "2018/01/02/soundtrack-for-the-game-is-released",
+        "2021/02/28/welcome-new-edutube"
+      ],
+      "excerpt": "Offline - EduTube EduTube EduTube Home About Blog Games Search Login Sign Up EduTube Login Sign Up Home About Blog Games Search Offline EduTube Games Offline Creative Puzzle Sandbox The Incredible Machine DOSBox Offline The Incredible Machine is a very popular puzzle game from the 1990s that tests your engineering skills and ingenuity. Solve \"machine puzzles\" through inventive use of different objects to achieve a simple task. Adventure King's Quest IV: The Perils of Rosella DOSBox Offline Online (browser) The fourth game in Sierra's famous King's Quest series, released in 1988, is the very first adventure game with a female protagonist (hero). It is also one of the first games with a female hero across any game genre. The role taken on by the player is that of Princess Rosella, daughter of King Graham... Mapping Strategy Turn based strategy (TBS) Warlords II Deluxe DOSBox Offline Warlor",
+      "word_count": 418
+    },
+    {
+      "id": "platform_dosbox",
+      "path": "/platform/doxbox/",
+      "status": 200,
+      "title": "DOSBox &#8211; EduTube",
+      "h1": [
+        "DOSBox"
+      ],
+      "headings": [
+        {
+          "level": 1,
+          "text": "DOSBox"
+        }
+      ],
+      "categories": [],
+      "genres": [
+        "adventure",
+        "creative",
+        "mapping",
+        "puzzle",
+        "sandbox",
+        "simulation",
+        "strategy",
+        "turn-based-strategy-tbs"
+      ],
+      "platforms": [
+        "doxbox",
+        "offline-version",
+        "online-browser"
+      ],
+      "ages": [],
+      "games": [
+        "civilization",
+        "kings-quest-iv-the-perils-of-rosella",
+        "master-of-orion-2",
+        "prodigy-math-game",
+        "sim-city-2000",
+        "the-incredible-machine-2",
+        "warlords-ii"
+      ],
+      "posts": [
+        "2018/01/02/about-space-and-world",
+        "2018/01/02/soundtrack-for-the-game-is-released",
+        "2021/02/28/welcome-new-edutube"
+      ],
+      "excerpt": "DOSBox - EduTube EduTube EduTube Home About Blog Games Search Login Sign Up EduTube Login Sign Up Home About Blog Games Search DOSBox EduTube Games DOSBox Strategy Turn based strategy (TBS) Civilization DOSBox Civilization is perhaps the most well-known example of a fun game used widely for educational purposes (rather than the other way around, an educational game with fun elements). Civilization II download option 1 Civilization II download option 2 Wikipedia Creative Puzzle Sandbox The Incredible Machine DOSBox Offline The Incredible Machine is a very popular puzzle game from the 1990s that tests your engineering skills and ingenuity. Solve \"machine puzzles\" through inventive use of different objects to achieve a simple task. Adventure King's Quest IV: The Perils of Rosella DOSBox Offline Online (browser) The fourth game in Sierra's famous King's Quest series, released in 1988, is the",
+      "word_count": 484
+    },
+    {
+      "id": "search",
+      "path": "/search/",
+      "status": 200,
+      "title": "EduTube Search &#8211; EduTube",
+      "h1": [
+        "EduTube Search"
+      ],
+      "headings": [
+        {
+          "level": 1,
+          "text": "EduTube Search"
+        }
+      ],
+      "categories": [],
+      "genres": [
+        "adventure",
+        "coding",
+        "creative",
+        "puzzle",
+        "sandbox",
+        "strategy",
+        "turn-based-strategy-tbs"
+      ],
+      "platforms": [
+        "doxbox",
+        "offline-version",
+        "online-browser"
+      ],
+      "ages": [],
+      "games": [
+        "civilization",
+        "code-org",
+        "image",
+        "kings-quest-iv-the-perils-of-rosella",
+        "minecraft-education",
+        "prodigy-math-game",
+        "the-incredible-machine-2"
+      ],
+      "posts": [
+        "2018/01/02/about-space-and-world",
+        "2018/01/02/soundtrack-for-the-game-is-released",
+        "2021/02/28/welcome-new-edutube"
+      ],
+      "excerpt": "EduTube Search - EduTube EduTube EduTube Home About Blog Games Search Login Sign Up EduTube Login Sign Up Home About Blog Games Search EduTube Search EduTube EduTube Search Category Geography History ICT/Computer Science Math Physics Science Space Platform DOSBox Offline Online (browser) Genre Adventure Coding Mapping Puzzle RPG Sandbox Turn based strategy (TBS) OS Linux Mac OS X Windows Order By Added Date Name Comment Order Type DESC ASC Search image Coding Creative Sandbox Minecraft Education Minecraft Education Edition Adventure Coding Puzzle Code.org Online (browser) Code.org provides free computer science activities and lessons, in particular interactive puzzles and games. It is used by millions of students globally from young to old, and some of the activities are translated in over 45 languages. Strategy Turn based strategy (TBS) Civilization DOSBox Civilization is perhaps the mo",
+      "word_count": 429
+    },
+    {
+      "id": "game_civ",
+      "path": "/game/civilization/",
+      "status": 200,
+      "title": "Civilization &#8211; EduTube",
+      "h1": [
+        "Civilization"
+      ],
+      "headings": [
+        {
+          "level": 1,
+          "text": "Civilization"
+        }
+      ],
+      "categories": [
+        "geography"
+      ],
+      "genres": [
+        "strategy",
+        "turn-based-strategy-tbs"
+      ],
+      "platforms": [
+        "doxbox"
+      ],
+      "ages": [],
+      "games": [
+        "civilization"
+      ],
+      "posts": [],
+      "excerpt": "Civilization - EduTube EduTube EduTube Home About Blog Games Search Login Sign Up EduTube Login Sign Up Home About Blog Games Search Civilization EduTube Games Geography Civilization About Civilization Civilization is perhaps the most well-known example of a fun game used widely for educational purposes (rather than the other way around, an educational game with fun elements). Civilization II download option 1 Civilization II download option 2 Wikipedia Game Details Genre Strategy Turn based strategy (TBS) Platforms DOSBox Modes Single Player Game Poster Leave a Comment Cancel Reply Submit Save my name, email, and website in this browser for the next time I comment. Copyright © 2021 EduTube Educational Games Home Games Blog About Contact Login Remember Me Sign in Lost Password? Create an Account Loading... Sign Up New membership are not allowed. Loading...",
+      "word_count": 134
+    },
+    {
+      "id": "game_minecraft",
+      "path": "/game/minecraft-education/",
+      "status": 200,
+      "title": "Minecraft Education &#8211; EduTube",
+      "h1": [
+        "Minecraft Education"
+      ],
+      "headings": [
+        {
+          "level": 1,
+          "text": "Minecraft Education"
+        }
+      ],
+      "categories": [
+        "computer-science"
+      ],
+      "genres": [
+        "coding",
+        "creative",
+        "sandbox"
+      ],
+      "platforms": [],
+      "ages": [],
+      "games": [
+        "minecraft-education"
+      ],
+      "posts": [],
+      "excerpt": "Minecraft Education - EduTube EduTube EduTube Home About Blog Games Search Login Sign Up EduTube Login Sign Up Home About Blog Games Search Minecraft Education EduTube Games ICT/Computer Science Minecraft Education About Minecraft Education Minecraft Education Edition Game Details Genre Coding Creative Sandbox Game Poster Leave a Comment Cancel Reply Submit Save my name, email, and website in this browser for the next time I comment. Copyright © 2021 EduTube Educational Games Home Games Blog About Contact Login Remember Me Sign in Lost Password? Create an Account Loading... Sign Up New membership are not allowed. Loading...",
+      "word_count": 96
+    },
+    {
+      "id": "game_prodigy",
+      "path": "/game/prodigy-math-game/",
+      "status": 200,
+      "title": "Prodigy Math Game &#8211; EduTube",
+      "h1": [
+        "Prodigy Math Game"
+      ],
+      "headings": [
+        {
+          "level": 1,
+          "text": "Prodigy Math Game"
+        }
+      ],
+      "categories": [
+        "math"
+      ],
+      "genres": [
+        "adventure",
+        "rpg"
+      ],
+      "platforms": [
+        "online-browser"
+      ],
+      "ages": [],
+      "games": [
+        "prodigy-math-game"
+      ],
+      "posts": [
+        "2018/01/02/about-space-and-world",
+        "2018/01/02/soundtrack-for-the-game-is-released"
+      ],
+      "excerpt": "Prodigy Math Game - EduTube EduTube EduTube Home About Blog Games Search Login Sign Up EduTube Login Sign Up Home About Blog Games Search Prodigy Math Game EduTube Games Math Prodigy Math Game About Prodigy Math Game Prodigy Math is set in a vibrant fantasy world where players have to solve quests and battle (mostly cute) monsters, solving Math problems to do so. It is completely free. There is a lot of variation in terms of different worlds, collectable items, etc. which makes it very motivating to play. Play online (requires account registration) | Wiki and guide Age and difficulty: There are battles but they are not graphic, and characters are generally cute (some monsters may look a little scary for very young players). The Math activities start at grade 1 level, but with parental guidance, children as young as age 4 can enjoy the games. The initial Math exercises require only basic ",
+      "word_count": 543
+    },
+    {
+      "id": "blog_post",
+      "path": "/2018/01/02/about-space-and-world",
+      "status": 200,
+      "title": "About Space and World &#8211; EduTube",
+      "headings": [
+        {
+          "level": 1,
+          "text": "About Space and World"
+        }
+      ],
+      "excerpt": "About Space and World - EduTube EduTube EduTube Home About Blog Games Search Login Sign Up EduTube Login Sign Up Home About Blog Games Search About Space and World EduTube Blog News About Space and World Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Nisl nisi scelerisque eu ultrices vitae. Eu lobortis elementum nibh tellus molestie. Tellus orci ac auctor augue mauris augue neque. Sem fringilla ut morbi tincidunt augue interdum. Sed risus ultricies tristique nulla aliquet enim. Dui nunc mattis enim ut. Aliquet bibendum enim facilisis gravida neque convallis a. In vitae turpis massa sed elementum tempus egestas sed sed. Sed lectus vestibulum mattis ullamcorper velit sed ullamcorper morbi tincidunt. Ultrices eros in cursus turpis massa tincidunt dui. Fames ac turpis egestas integer eget aliquet nibh praesent sit m",
+      "word_count": 956
+    }
+  ],
+  "taxonomy": {
+    "categories": [
+      "computer-science",
+      "geography",
+      "history",
+      "math",
+      "physics",
+      "science",
+      "space"
+    ],
+    "genres": [
+      "adventure",
+      "coding",
+      "creative",
+      "mapping",
+      "puzzle",
+      "rpg",
+      "sandbox",
+      "simulation",
+      "strategy",
+      "turn-based-strategy-tbs"
+    ],
+    "platforms": [
+      "doxbox",
+      "offline-version",
+      "online-browser"
+    ],
+    "ages": []
+  },
+  "section_count": 14
+}

@@ -1,0 +1,95 @@
+{
+  "measured": 670,
+  "suspicious": 54,
+  "rejected_by_jev": 42,
+  "fixed": 38,
+  "mean_luminance": 98.9,
+  "too_dark": 10,
+  "too_flat": 0,
+  "rejections": [
+    {
+      "id": "1a8pI65emDE",
+      "mean": 231.7,
+      "sd": 53.7,
+      "p": 0.65,
+      "title": "Which Came First - The Chicken or the Egg?"
+    },
+    {
+      "id": "ipzR9bhei_o",
+      "mean": 7.7,
+      "sd": 25.7,
+      "p": 0.79,
+      "title": "Bach, Toccata and Fugue in D minor, organ"
+    },
+    {
+      "id": "b694exl_oZo",
+      "mean": 18.4,
+      "sd": 35.3,
+      "p": 0.56,
+      "title": "My creations, a new form of life | Theo Jansen"
+    },
+    {
+      "id": "9hIQjrMHTv4",
+      "mean": 246.2,
+      "sd": 44.1,
+      "p": 0.77,
+      "title": "History of the Internet"
+    },
+    {
+      "id": "YVvn8dpSAt0",
+      "mean": 8.3,
+      "sd": 23.3,
+      "p": 0.6,
+      "title": "Underwater astonishments | David Gallo"
+    },
+    {
+      "id": "3ff_AXVlo9U",
+      "mean": 10.7,
+      "sd": 22.6,
+      "p": 0.72,
+      "title": "Singing Tesla Coil at Duckon 2007"
+    },
+    {
+      "id": "QgKCrGvShZs",
+      "mean": 15.9,
+      "sd": 27.0,
+      "p": 0.64,
+      "title": "Wii remote hacks | Johnny Lee"
+    },
+    {
+      "id": "pMcfrLYDm2U",
+      "mean": 7.3,
+      "sd": 23.9,
+      "p": 0.72,
+      "title": "Did You Know 2.0"
+    },
+    {
+      "id": "taHTA7S_JGk",
+      "mean": 11.5,
+      "sd": 29.7,
+      "p": 0.79,
+      "title": "geography seasons"
+    },
+    {
+      "id": "nice6NYb_WA",
+      "mean": 22.4,
+      "sd": 45.8,
+      "p": 0.66,
+      "title": "3D morphable model face animation"
+    },
+    {
+      "id": "aEFKfXiCbLw",
+      "mean": 6.2,
+      "sd": 31.6,
+      "p": 0.77,
+      "title": "Pay Attention"
+    },
+    {
+      "id": "a8nDJaH-fVE",
+      "mean": 30.6,
+      "sd": 57.9,
+      "p": 0.53,
+      "title": "Susan Savage-Rumbaugh: The gentle genius of bonobos"
+    }
+  ]
+}

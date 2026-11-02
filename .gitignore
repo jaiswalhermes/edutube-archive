@@ -1,0 +1,19 @@
+# deps
+node_modules/
+
+# CLI state
+.vercel/
+.env.local
+
+# generated artifacts
+data/e2e.json
+data/dogfood/
+*.log
+
+# local captures
+screenshots/
+.DS_Store
+
+# python
+__pycache__/
+*.pyc

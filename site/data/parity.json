@@ -1,0 +1,98 @@
+{
+  "source": "https://www.edutube.org",
+  "sections": [
+    {
+      "section": "home",
+      "label": "Home",
+      "coverage": "adapted",
+      "coverage_p": 0.757,
+      "need": "not_applicable",
+      "need_p": 0.43,
+      "gap": false
+    },
+    {
+      "section": "about",
+      "label": "About",
+      "coverage": "adapted",
+      "coverage_p": 0.693,
+      "need": "useful",
+      "need_p": 0.393,
+      "gap": false
+    },
+    {
+      "section": "blog",
+      "label": "Blog",
+      "coverage": "missing",
+      "coverage_p": 1.0,
+      "need": "not_applicable",
+      "need_p": 0.45,
+      "gap": false
+    },
+    {
+      "section": "games_index",
+      "label": "Games by Categories",
+      "coverage": "adapted",
+      "coverage_p": 0.847,
+      "need": "not_applicable",
+      "need_p": 0.387,
+      "gap": false
+    },
+    {
+      "section": "category_math",
+      "label": "Category page (Math)",
+      "coverage": "adapted",
+      "coverage_p": 0.717,
+      "need": "not_applicable",
+      "need_p": 0.383,
+      "gap": false
+    },
+    {
+      "section": "genre_strategy",
+      "label": "Genre page (Strategy)",
+      "coverage": "missing",
+      "coverage_p": 0.987,
+      "need": "not_applicable",
+      "need_p": 0.627,
+      "gap": false
+    },
+    {
+      "section": "platform_online",
+      "label": "Platform page (Online browser)",
+      "coverage": "missing",
+      "coverage_p": 0.723,
+      "need": "not_applicable",
+      "need_p": 0.9,
+      "gap": false
+    },
+    {
+      "section": "search",
+      "label": "Search",
+      "coverage": "adapted",
+      "coverage_p": 0.817,
+      "need": "essential",
+      "need_p": 0.667,
+      "gap": false
+    },
+    {
+      "section": "game_page",
+      "label": "Item page",
+      "coverage": "adapted",
+      "coverage_p": 0.847,
+      "need": "essential",
+      "need_p": 0.47,
+      "gap": false
+    },
+    {
+      "section": "game_extras",
+      "label": "Download links and comments",
+      "coverage": "missing",
+      "coverage_p": 0.933,
+      "need": "not_applicable",
+      "need_p": 0.51,
+      "gap": false
+    }
+  ],
+  "gaps": [],
+  "covered": 6,
+  "total": 10
+}

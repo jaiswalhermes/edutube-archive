@@ -1,0 +1,14 @@
+{
+  "name": "edutube-archive",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A rebuilt, re-verified catalogue of EduTube.org's 2008-2021 video archive.",
+  "scripts": {
+    "serve": "python3 -m http.server 8799 --directory site",
+    "e2e": "node tools/e2e.js",
+    "dogfood": "python3 tools/dogfood.py"
+  },
+  "devDependencies": {
+    "playwright": "1.64.1"
+  }
+}
