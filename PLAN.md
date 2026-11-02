@@ -72,7 +72,7 @@ Caveats worth stating plainly:
 pipeline/harvest_listing.py  Wayback CDX → /en/category/* tables → data/listing.jsonl
 pipeline/enrich.py           YouTube oEmbed → alive?, channel, canonical thumb
 pipeline/thumbs.py           probe hq720 / hqdefault so the UI never 404s
-pipeline/judge.py            the judge ask (4 questions, 1 call per video) → data/judgments.jsonl
+pipeline/judge.py            the judge ask (5 questions, 1 call per video) → data/judgments.jsonl
 pipeline/build_catalog.py    join → site/data/catalog.json
 pipeline/verify_claims.py    the four claims above → site/data/verify.json
 site/                        vanilla JS YouTube-style shell, no build step
