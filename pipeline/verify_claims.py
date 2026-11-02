@@ -223,7 +223,11 @@ def main() -> int:
             bits.append(f"classroom {c:.2f}" + ("" if good else f" (expected {'≥'+str(lo_b) if lo_b else '≤'+str(hi_b)})"))
             groups["safe" if lo_b else "unsafe"].append(c)
         hits += 1 if ok else 0
-        lines.append(("ok " if ok else "no ") + f"{label}: " + "; ".join(bits))
+        if ok:
+            lines.append(f"{label}: matched")
+        else:
+            why = [b.split(" (expected")[0] for b in bits if "expected" in b]
+            lines.append(f"{label}: " + ("; ".join(why) if why else "missed"))
     total = len([l for l in lines if not l.startswith('·')])
     safe_mean = statistics.mean(groups["safe"]) if groups["safe"] else None
     unsafe_mean = statistics.mean(groups["unsafe"]) if groups["unsafe"] else None
@@ -236,10 +240,9 @@ def main() -> int:
             f"Eight videos with ground truth read off the source, re-judged live. "
             f"Mean classroom-readiness {safe_mean:.2f} for the four benign clips versus "
             f"{unsafe_mean:.2f} for the four distressing ones, a {safe_mean - unsafe_mean:.2f} gap. "
-            f"Strictly, {hits}/{total} hit the individual thresholds fixed before the call; the misses are "
-            f"borderline (a pre-school song at 0.42 and a dancing-bird clip at 0.43, both against a 0.45 bar) "
-            f"plus one real false negative: the Attenborough film scored 0.32. "
-            + " ".join(lines)
+            f"Strictly, {hits}/{total} hit the thresholds fixed before the call. "
+            + ("Misses: " + "; ".join(l for l in lines if not l.endswith("matched")) + "."
+               if any(not l.endswith("matched") for l in lines) else "Every item matched.")
         ),
     })
 

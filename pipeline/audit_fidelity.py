@@ -243,7 +243,7 @@ def main() -> int:
 
     result = {
         "date": date.today().isoformat(),
-        "model": "jev-latest",
+        "model": "typed-judgment model",
         "source": "https://karpathy.bearblog.dev/hacker-tube/",
         "items": out_items,
         "met": met,

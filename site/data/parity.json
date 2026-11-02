@@ -5,18 +5,18 @@
       "section": "home",
       "label": "Home",
       "coverage": "adapted",
-      "coverage_p": 0.757,
+      "coverage_p": 0.76,
       "need": "not_applicable",
-      "need_p": 0.43,
+      "need_p": 0.427,
       "gap": false
     },
     {
       "section": "about",
       "label": "About",
       "coverage": "adapted",
-      "coverage_p": 0.693,
+      "coverage_p": 0.69,
       "need": "useful",
-      "need_p": 0.393,
+      "need_p": 0.417,
       "gap": false
     },
     {
@@ -25,25 +25,25 @@
       "coverage": "missing",
       "coverage_p": 1.0,
       "need": "not_applicable",
-      "need_p": 0.45,
+      "need_p": 0.487,
       "gap": false
     },
     {
       "section": "games_index",
       "label": "Games by Categories",
       "coverage": "adapted",
-      "coverage_p": 0.847,
+      "coverage_p": 0.86,
       "need": "not_applicable",
-      "need_p": 0.387,
+      "need_p": 0.393,
       "gap": false
     },
     {
       "section": "category_math",
       "label": "Category page (Math)",
       "coverage": "adapted",
-      "coverage_p": 0.717,
+      "coverage_p": 0.733,
       "need": "not_applicable",
-      "need_p": 0.383,
+      "need_p": 0.38,
       "gap": false
     },
     {
@@ -52,34 +52,34 @@
       "coverage": "missing",
       "coverage_p": 0.987,
       "need": "not_applicable",
-      "need_p": 0.627,
+      "need_p": 0.577,
       "gap": false
     },
     {
       "section": "platform_online",
       "label": "Platform page (Online browser)",
       "coverage": "missing",
-      "coverage_p": 0.723,
+      "coverage_p": 0.737,
       "need": "not_applicable",
-      "need_p": 0.9,
+      "need_p": 0.893,
       "gap": false
     },
     {
       "section": "search",
       "label": "Search",
       "coverage": "adapted",
-      "coverage_p": 0.817,
+      "coverage_p": 0.82,
       "need": "essential",
-      "need_p": 0.667,
+      "need_p": 0.693,
       "gap": false
     },
     {
       "section": "game_page",
       "label": "Item page",
       "coverage": "adapted",
-      "coverage_p": 0.847,
+      "coverage_p": 0.837,
       "need": "essential",
-      "need_p": 0.47,
+      "need_p": 0.51,
       "gap": false
     },
     {
@@ -88,7 +88,7 @@
       "coverage": "missing",
       "coverage_p": 0.933,
       "need": "not_applicable",
-      "need_p": 0.51,
+      "need_p": 0.513,
       "gap": false
     }
   ],
