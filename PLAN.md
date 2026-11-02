@@ -48,16 +48,16 @@ My first pass was based on the X thread. Reading [karpathy.bearblog.dev/hacker-t
 
 The other correction is scope: Karpathy's "local" was a VPS with hardening. This one is a local Docker image (`read_only`, caps dropped, healthcheck, CSP) rather than a hardened public box.
 
-## 3. Verification with jev
+## 3. Verification with the judge
 
-Claims were fixed before measuring, then run with the `jev` CLI (`jev-latest`) on the harvested records. Full output: `data/verify.json`, rendered in the app at `#/about`.
+Claims were fixed before measuring, then run through the judge on the harvested records. Full output: `data/verify.json`, rendered in the app at `#/about`.
 
 | Claim | Result | Measurement |
 |---|---|---|
 | There is still a corpus to rebuild from | **pass** | 1,098 archived rows → 815 of 1,084 checked still playable (75%); 269 dead links dropped |
-| Jev can replace the taxonomy the archive lost | **pass** | 61% agreement with the 2008 tags across 822 videos; the disagreements are mostly editorial drift |
+| the judge can replace the taxonomy the archive lost | **pass** | 61% agreement with the 2008 tags across 822 videos; the disagreements are mostly editorial drift |
 | Classroom-readiness discriminates | **pass** | 39% below 0.40, 49% in 0.40–0.60, 11% above 0.60; σ = 0.15 |
-| Jev separates safe from distressing footage | **pass** | benign 0.46 vs distressing 0.25 (gap 0.21, 3-run average); strict per-item 6/8 |
+| the judge separates safe from distressing footage | **pass** | benign 0.46 vs distressing 0.25 (gap 0.21, 3-run average); strict per-item 6/8 |
 
 Caveats worth stating plainly:
 
@@ -72,22 +72,22 @@ Caveats worth stating plainly:
 pipeline/harvest_listing.py  Wayback CDX → /en/category/* tables → data/listing.jsonl
 pipeline/enrich.py           YouTube oEmbed → alive?, channel, canonical thumb
 pipeline/thumbs.py           probe hq720 / hqdefault so the UI never 404s
-pipeline/judge.py            jev ask (4 questions, 1 call per video) → data/judgments.jsonl
+pipeline/judge.py            the judge ask (4 questions, 1 call per video) → data/judgments.jsonl
 pipeline/build_catalog.py    join → site/data/catalog.json
 pipeline/verify_claims.py    the four claims above → site/data/verify.json
 site/                        vanilla JS YouTube-style shell, no build step
 ```
 
-Runtime rules: one request at a time against the archive (it throttles bursts), 4–6 parallel against YouTube and jev.
+Runtime rules: one request at a time against the archive (it throttles bursts), 4–6 parallel against YouTube and the judge.
 
 UI scope: home grid, watch page with click-to-play embed, subject hubs, channel pages, search, typed filters (subject / level / classroom-ready), sort, and an `#/about` page that shows the pipeline and the verification table.
 
-## 4b. Fidelity audit (jev, second pass)
+## 4b. Fidelity audit (the judge, second pass)
 
 Second pass after reading the original: each requirement quoted from the post, evidence
-measured from the running container, adjudicated by jev (3 runs averaged, threshold 0.60).
+measured from the running container, adjudicated by the judge (3 runs averaged, threshold 0.60).
 
-| Requirement (from the post) | jev p | Status |
+| Requirement (from the post) | the judge p | Status |
 |---|---|---|
 | 50% frame instead of uploaded thumbnail | 0.87 | met (663 of 670) |
 | For You, no accounts, local session | 0.89 | met (10/10 Physics after three Physics watches) |
@@ -100,7 +100,7 @@ measured from the running container, adjudicated by jev (3 runs averaged, thresh
 
 Overall verdict: *"matches the pattern with documented substitutions"*, confidence 0.89.
 
-The first run scored the semantic pass at 0.52 and exposed a real gap: jev's judgments were
+The first run scored the semantic pass at 0.52 and exposed a real gap: the judge's judgments were
 ranking spam down, not removing it. Fixed with a three-rule filter (`promotional >= 0.60`;
 `classroom < 0.30 and evergreen < 0.50`; `index == 0 and promotional >= 0.40`), which dropped
 149 records: 76 ads, 51 not-a-lesson clips, 22 editorially-worthless ones.
@@ -109,7 +109,7 @@ ranking spam down, not removing it. Fixed with a three-rule filter (`promotional
 
 The first drafts carried the usual tells: em dashes used as rhetorical connectors, gradient
 headline text, a glowing status dot, emoji ticks, a radial background wash. `pipeline/audit_slop.py`
-extracts every dash in authored copy and has jev classify it three ways.
+extracts every dash in authored copy and has the judge classify it three ways.
 
 First run: 43 dashes, 17 judged AI connective (for example "This feed is built from what you
 open, and it lives in this browser — no account…"). All 43 were rewritten out, along with the
@@ -119,7 +119,7 @@ placeholders (`—` became `n/a`) and the decorative glyphs. Second run: 0 dashe
 ## 4d. Section parity with the site as it stands
 
 `pipeline/extract_site.py` walks edutube.org's live sections (14 of them) and records what each
-one contains. `pipeline/audit_parity.py` then asks jev two questions per section, majority of
+one contains. `pipeline/audit_parity.py` then asks the judge two questions per section, majority of
 three runs: is there an equivalent here, and should there be?
 
 | Section | Coverage | Needed |

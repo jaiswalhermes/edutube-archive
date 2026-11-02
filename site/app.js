@@ -291,7 +291,7 @@
           <div class="desc" id="desc">
             <div class="desc__meta">${fmtViews(v.views_day)} views/day · ${esc(v.duration || 'n/a')} · EduTube index ${v.index ? v.index.toFixed(2) : 'n/a'}</div>
             <div class="desc__body">${esc(v.description || 'No description was archived for this video.')}</div>
-            <div class="desc__filed" style="margin-top:10px;color:#9a9a9a;font-size:12px">Filed by EduTube's editors under <b>${esc(v.legacy_category || 'unfiled')}</b> · Re-judged by the model as <b>${esc(v.subject)}</b>, ${esc(v.level || 'General')}${ageOf(v.level) ? ` (ages ${ageOf(v.level)})` : ''}${v.classroom != null ? ` · classroom-ready p=${Number(v.classroom).toFixed(2)}` : ''}${v.evergreen != null ? ` · still current p=${Number(v.evergreen).toFixed(2)}` : ''}</div>
+            <div class="desc__filed" style="margin-top:10px;color:#9a9a9a;font-size:12px">Filed by EduTube's editors under <b>${esc(v.legacy_category || 'unfiled')}</b> · Re-judged by the model as <b>${esc(v.subject)}</b>, ${esc(v.level || 'General')}${ageOf(v.level) ? ` <span style="white-space:nowrap">(ages ${ageOf(v.level)})</span>` : ''}${v.classroom != null ? ` · classroom-ready p=${Number(v.classroom).toFixed(2)}` : ''}${v.evergreen != null ? ` · still current p=${Number(v.evergreen).toFixed(2)}` : ''}</div>
           </div>
           <div class="chips" style="position:static;padding-top:16px">
             <a class="chip" href="#/subject/${slugify(v.subject)}">${esc(v.subject)}</a>

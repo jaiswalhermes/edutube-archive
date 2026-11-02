@@ -25,11 +25,11 @@
       "id": "known-answers",
       "claim": "A model separates classroom-safe footage from distressing footage",
       "pass": true,
-      "detail": "Eight videos with ground truth read off the source, re-judged live. Mean classroom-readiness 0.47 for the four benign clips versus 0.25 for the four distressing ones, a 0.22 gap. Strictly, 4/8 hit the individual thresholds fixed before the call; the misses are borderline (a pre-school song at 0.42 and a dancing-bird clip at 0.43, both against a 0.45 bar) plus one real false negative: the Attenborough film scored 0.32. ok levitating frog: subject Physics no Time Lapse of Plants Growing 2: subject Biology; level General (expected Primary); classroom 0.68 no The Animal Sounds Song: level Pre-school; classroom 0.41 (expected ≥0.45) no Nature's Tools! How Birds Use Them: subject Biology; classroom 0.32 (expected ≥0.45) ok Two Male lions kills Hyena: classroom 0.17 ok Starving Polar Bear: classroom 0.31 ok Dog Attack Styles: classroom 0.27 no Snowball the dancing cockatoo: classroom 0.45 (expected ≥0.45)"
+      "detail": "Eight videos with ground truth read off the source, re-judged live. Mean classroom-readiness 0.46 for the four benign clips versus 0.25 for the four distressing ones, a 0.21 gap. Strictly, 5/8 hit the thresholds fixed before the call. Misses: The Animal Sounds Song: classroom 0.41; Nature's Tools! How Birds Use Them: classroom 0.30; Snowball the dancing cockatoo: classroom 0.45."
     }
   ],
   "groups": {
-    "safe_mean": 0.47,
+    "safe_mean": 0.46,
     "unsafe_mean": 0.25
   }
 }
